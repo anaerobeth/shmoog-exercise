@@ -9,8 +9,9 @@
 <body>
 <!-- page specific content -->
 <!-- Navigation -->
-<ul>
-  <li><a href="#">Search</a></li>
+<div class="navigation-container">
+<ul class="nav">
+  <li><a href="#" class="active">Search</a></li>
   <li><a href="#">Images</a></li>
   <li><a href="#">Maps</a></li>
   <li><a href="#">Play</a></li>
@@ -21,13 +22,20 @@
   <li><a href="#">Calendar</a></li>
 
 </ul>
+</div>
 
 <!-- Search form -->
+<div class="search-container">
+
 <form>
   <label>Shmoogle</label>
     <input type="search" name="search">
     <input type="submit" name="Search">
 </form>
+</div>
+
+<!-- Filters -->
+<div class="filters-container">
 
 <ul>
   <li><a href="#">Web</a></li>
@@ -37,10 +45,14 @@
   <li><a href="#">Search Tools</a></li>
 
 </ul>
+</div>
 
-<!
+<div class="main-container">
+</div>
+<!-- comment -->
 <%= yield %>
 
 <!-- commment -->
+
 </body>
 </html>
